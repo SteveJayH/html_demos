@@ -2,6 +2,16 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <title>CodePen - Javascript Tip Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
   <title>하루에 얼마?</title>
   <link rel="stylesheet" href="./style.css">
 
@@ -12,14 +22,30 @@
   <h1>하루에 얼마</h1>
   <div id="calculator">
 
-
     <form>
-      <p>가격이 얼마예요?
-        <p>
-          <input id="billamt" type="text" placeholder="내가 입력"> 원
 
-          <p>사용기간
-            <p>
+      <h2> 1. 가격이 얼마예요? </h2>
+
+          <div id="price_button">
+            <input type='button' id="price1" onclick="p1_click();" value='10 만원' />
+            <input type='button' id="price2" onclick="p2_click();" value='100 만원' />
+            <input type='button' id="price3" onclick="p3_click();" value='500 만원'/>
+            <input id="billamt1" type="text" placeholder="직접 입력" onclick="p4_click();" onkeypress="onlyNumber();"/>
+            <tmp> 만원 </tmp>
+          </div>
+      <h4></h4>
+        
+      
+      <h2>   2. 얼마동안 쓸 거예요? </h2>
+           <div id="price_button">
+            <input type='button' id="day1" value='1달' onclick="p5_click();"/>
+            <input type='button' id="day2" value='1년' onclick="p6_click();"/>
+            <input type='button' id="day3" value='5년'onclick="p7_click();"/>
+            <input id="billamt2" type="text" placeholder="직접 입력"  onclick="p8_click();" onkeypress="onlyNumber();"/>
+            <tmp> 달 </tmp>
+          </div>
+      <h4></h4>
+<!--
               <select id="serviceQual">
             <option disabled selected value="0">-- Choose an Option --</option>
             <option value="0.3">30&#37; &#45; Outstanding</option>
@@ -28,17 +54,15 @@
             <option value="0.1">10&#37; &#45; Bad</option>
             <option value="0.05">5&#37; &#45; Terrible</option>
         </select>
+-->
 
-    </form>
-    <p>How many people are sharing the bill?</p>
-    <input id="peopleamt" type="text" placeholder="Number of People"> people
     <button type="button" id="calculate">계산!</button>
 
   </div>
   <!--calculator end-->
   <div id="totalTip">
-    <sup>$</sup><span id="tip">0.00</span>
-    <small id="each">each</small>
+    <span id="tip">0.00</span>
+
   </div>
   <!--totalTip end-->
 
@@ -46,6 +70,11 @@
 <!--container end-->
 
 <script type="text/javascript" src="tipcalculator.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
 <!-- partial -->
   <script  src="./script.js"></script>
 
