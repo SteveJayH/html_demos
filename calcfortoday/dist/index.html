@@ -2,23 +2,23 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Javascript Tip Calculator</title>
+  <title>하루에 얼마?</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="container">
-  <h1>Tip Calculator</h1>
+  <h1>하루에 얼마</h1>
   <div id="calculator">
 
 
     <form>
-      <p>How much was your bill?
+      <p>가격이 얼마예요?
         <p>
-          $ <input id="billamt" type="text" placeholder="Bill Amount">
+          <input id="billamt" type="text" placeholder="내가 입력"> 원
 
-          <p>How was your service?
+          <p>사용기간
             <p>
               <select id="serviceQual">
             <option disabled selected value="0">-- Choose an Option --</option>
@@ -32,7 +32,7 @@
     </form>
     <p>How many people are sharing the bill?</p>
     <input id="peopleamt" type="text" placeholder="Number of People"> people
-    <button type="button" id="calculate">Calculate!</button>
+    <button type="button" id="calculate">계산!</button>
 
   </div>
   <!--calculator end-->
