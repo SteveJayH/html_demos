@@ -69,7 +69,7 @@ function calculateTip() {
   // return;
   alert('hi');
   //Calculate tip
-  if (price == 0.0 || month = 0){
+  if (price == 0.0 || month == 0){
     alert("가격이랑 기간을 입력해주세요!");
     return;
   }
