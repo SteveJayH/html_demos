@@ -3,17 +3,17 @@ var price = 0.0;
 var month = 0;
 
 function p1_click(){
-  var replacedString = "선택 : 100,000 원"
+  var replacedString = "선택 : 100,000 원";
   price = 100000;
   document.getElementsByTagName("h4")[0].innerHTML = replacedString;
 }
 function p2_click(){
-  var replacedString = "선택 : 1,000,000 원"
+  var replacedString = "선택 : 1,000,000 원";
   price = 1000000;
   document.getElementsByTagName("h4")[0].innerHTML = replacedString;
 }
 function p3_click(){
-  var replacedString = "선택 : 5,000,000 원"
+  var replacedString = "선택 : 5,000,000 원";
   price = 5000000;
   document.getElementsByTagName("h4")[0].innerHTML = replacedString;
 }
