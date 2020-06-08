@@ -18,13 +18,13 @@ function p3_click(){
   document.getElementsByTagName("h4")[0].innerHTML = replacedString;
 }
 function p4_click(){
-  function updateValue(e){
+  function updateValueone(e){
     price = Number(e.target.value) * 10000;
     amount = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     document.getElementsByTagName("h4")[0].innerHTML = "선택 : " + amount + " 원";
   }
   const input = document.getElementById("billamt1");
-  input.addEventListener('input', updateValue);
+  input.addEventListener('input', updateValueone);
 }
 function p5_click(){
   var replacedString = "선택 : 1달"
@@ -42,7 +42,7 @@ function p7_click(){
   document.getElementsByTagName("h4")[1].innerHTML = replacedString;
 }
 function p8_click(){
-  function updateValue(e){
+  function updateValuetwo(e){
     month = Number(e.target.value);
     n_year = Math.floor(month/12);
     n_month = (month % 12).toString();
@@ -56,7 +56,7 @@ function p8_click(){
     
   }
   const input = document.getElementById("billamt2");
-  input.addEventListener('input', updateValue);
+  input.addEventListener('input', updateValuetwo);
 }
 function onlyNumber(){
   if((event.keyCode<48)||(event.keyCode>57))
@@ -89,5 +89,6 @@ document.getElementById("totalTip").style.display = "none";
 
 //click to call function
 document.getElementById("calculate").onclick = function() {
+  alert("hi");
   calculateTip();
 };
