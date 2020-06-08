@@ -89,6 +89,5 @@ document.getElementById("totalTip").style.display = "none";
 
 //click to call function
 document.getElementById("calculate").onclick = function() {
-  alert("hi");
   calculateTip();
 };
